@@ -1,0 +1,35 @@
+import { Body, Controller, Delete, Get, Param, Post, Put } from "@nestjs/common";
+import { TenantService } from "./tenant.service";
+import { User, UserRole } from "src/entities/user.entity";
+import { CreateTenantDto } from "./create-tenant.dto";
+import { updateTenantDto } from "./update-tenant.dto";
+
+@Controller("tenants")
+export class TenantController {
+    constructor(private readonly tenantService: TenantService) { }
+
+    @Post()
+    create(@Body() createTenantDto: CreateTenantDto) {
+        return this.tenantService.create(createTenantDto);
+    }
+
+    @Get()
+    findAll() {
+        return this.tenantService.findAll();
+    }
+
+    @Get(":id")
+    findOne(@Param('id') id: string) {
+        return this.tenantService.findOne(id);
+    }
+
+    @Put(":id")
+    update(@Param('id') id: string, @Body() updateTenantDto: updateTenantDto) {
+        return this.tenantService.update(id, updateTenantDto);
+    }
+
+    @Delete(":id")
+    remove(@Param('id') id: string) {
+        return this.tenantService.remove(id);
+    }
+}
