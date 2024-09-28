@@ -24,7 +24,7 @@ API para gestão de tarefas multiusuário, suportando múltiplas empresas (tenan
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/task-management-api.git
+    git@github.com:WilliansonDantas/Task_Management.git
     ```
 
 2. Navegue para o diretório do projeto:
