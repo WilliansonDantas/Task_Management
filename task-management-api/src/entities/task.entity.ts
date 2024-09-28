@@ -5,43 +5,42 @@ import { Tenant } from "./tenant.entity";
 export enum TaskStatus {
     PENDENTE = "Pendente",
     EM_PROGRESSO = "Em Progresso",
-    CONCLUIDA = "Concluída",
+    CONCLUIDA = "Concluída",
 }
 
 @Entity()
 export class Task {
     @PrimaryGeneratedColumn("uuid")
-    id: string
+    id: string;
 
     @Column()
-    title: string
+    title: string;
 
     @Column()
-    description: string
+    description: string;
 
     @Column({
         type: "enum",
         enum: TaskStatus,
-        default: TaskStatus.PENDENTE
+        default: TaskStatus.PENDENTE,
     })
-    status: TaskStatus
+    status: TaskStatus;
 
     @Column()
-    deadline: Date
+    deadline: Date;
 
     @ManyToOne(() => User, (user) => user.createdTasks)
-    createdBy: User
+    createdBy: User;
 
     @ManyToOne(() => User, (user) => user.assignedTasks)
-    assignedTo: User
+    assignedTo: User;
 
     @ManyToOne(() => Tenant, (tenant) => tenant.tasks, { onDelete: "CASCADE" })
-    tenant: Tenant
+    tenant: Tenant;
 
     @CreateDateColumn()
-    createdAt: Date
+    createdAt: Date;
 
     @UpdateDateColumn()
-    updatedAt: Date
-
+    updatedAt: Date;
 }
