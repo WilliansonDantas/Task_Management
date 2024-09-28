@@ -1,4 +1,3 @@
-import e from "express";
 import { Column, CreateDateColumn, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 import { Tenant } from "./tenant.entity";
 import { Task } from "./task.entity";
@@ -43,4 +42,5 @@ export class User {
 
     @OneToMany(() => Task, (task) => task.assignedTo)
     assignedTasks: Task[];
+    userId: string;
 }
