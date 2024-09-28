@@ -2,7 +2,7 @@
 
 API para gestão de tarefas multiusuário, suportando múltiplas empresas (tenants), gestão de usuários e tarefas.
 
-## Tecnologias
+## <img height="20" src="https://raw.githubusercontent.com/innng/innng/master/assets/soulgem-sayaka.gif"/>Tecnologias
 
 - **Typescript**
 - **Node.js**
@@ -12,7 +12,7 @@ API para gestão de tarefas multiusuário, suportando múltiplas empresas (tenan
 - **JWT para Autenticação**
 - **Git para Versionamento**
 
-## Como Rodar
+## <img height="20" src="https://raw.githubusercontent.com/innng/innng/master/assets/soulgem-sayaka.gif"/> Como Rodar
 
 ### Pré-requisitos
 
@@ -55,7 +55,7 @@ API para gestão de tarefas multiusuário, suportando múltiplas empresas (tenan
 
 6. Inicie a aplicação:
     ```bash
-    npm run start
+    npm run start:dev
     ```
 
-7. Acesse a documentação da API via Swagger em [http://localhost:3000/api](http://localhost:3000/api)
+### <img height="20" src="https://raw.githubusercontent.com/innng/innng/master/assets/soulgem-sayaka.gif"/> Acesse a documentação da API via Swagger em [http://localhost:3000/api](http://localhost:3000/api)
