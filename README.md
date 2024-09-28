@@ -1,4 +1,4 @@
-# Task Management API
+# <img height="20" src="https://raw.githubusercontent.com/innng/innng/master/assets/soulgem-sayaka.gif"/> Task Management API
 
 API para gestão de tarefas multiusuário, suportando múltiplas empresas (tenants), gestão de usuários e tarefas.
 
