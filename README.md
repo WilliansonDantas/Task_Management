@@ -2,7 +2,7 @@
 
 API para gestão de tarefas multiusuário, suportando múltiplas empresas (tenants), gestão de usuários e tarefas.
 
-## <img height="20" src="https://raw.githubusercontent.com/innng/innng/master/assets/soulgem-sayaka.gif"/>Tecnologias
+## <img height="20" src="https://raw.githubusercontent.com/innng/innng/master/assets/soulgem-sayaka.gif"/> Tecnologias
 
 - **Typescript**
 - **Node.js**
@@ -63,6 +63,8 @@ API para gestão de tarefas multiusuário, suportando múltiplas empresas (tenan
     npm run start:dev
     ```
 
+## <img height="20" src="https://raw.githubusercontent.com/innng/innng/master/assets/soulgem-sayaka.gif"/> Acesse a documentação da API via Swagger em [http://localhost:3000/api](http://localhost:3000/api)
+
 ## <img height="20" src="https://raw.githubusercontent.com/innng/innng/master/assets/soulgem-sayaka.gif"/> Teste Manual da Aplicação
 
 Siga os passos abaixo para testar manualmente as funcionalidades da aplicação:
@@ -104,5 +106,3 @@ Siga os passos abaixo para testar manualmente as funcionalidades da aplicação:
 Após obter o token JWT no passo 3, insira-o no cabeçalho das próximas requisições.
 
 Você agora pode acessar as demais funcionalidades da API, como gestão de tarefas, listagem de usuários, entre outros.
-
-### <img height="20" src="https://raw.githubusercontent.com/innng/innng/master/assets/soulgem-sayaka.gif"/> Acesse a documentação da API via Swagger em [http://localhost:3000/api](http://localhost:3000/api)
